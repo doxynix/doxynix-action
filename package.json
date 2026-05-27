@@ -1,0 +1,27 @@
+{
+  "name": "action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist --minify --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doxynix/doxynix-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/doxynix/doxynix-action/issues"
+  },
+  "homepage": "https://github.com/doxynix/doxynix-action#readme",
+  "dependencies": {
+    "@actions/core": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.4"
+  }
+}
