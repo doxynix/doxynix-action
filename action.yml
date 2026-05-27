@@ -1,14 +1,18 @@
 name: 'Doxynix Repository Documenter'
 description: 'Triggers Doxynix AI engine to analyze your repository and update docs'
-author: 'Dxnx_'
+author: 'Doxynix'
 inputs:
   doxynix-token:
-    description: 'Your secure Doxynix API key (created in Settings: https://doxynix.space/k) '
+    description: 'Your secure Doxynix API key (created in Settings: https://doxynix.space/k)'
     required: true
   branch:
     description: 'The branch to analyze'
     required: false
     default: 'main'
+  api-url:
+    description: 'Custom API base URL (used for local testing)'
+    required: false
+    default: 'https://doxynix.space' 
 runs:
-  using: 'node20'
-  main: 'dist/index.js' 
+  using: 'node22'
+  main: 'dist/index.js'
