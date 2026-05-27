@@ -3,7 +3,7 @@ description: 'Triggers Doxynix AI engine to analyze your repository and update d
 author: 'Dxnx_'
 inputs:
   doxynix-token:
-    description: 'Your secure Doxynix API key (created in Dashboard)'
+    description: 'Your secure Doxynix API key (created in Settings: https://doxynix.space/k) '
     required: true
   branch:
     description: 'The branch to analyze'
